@@ -1,0 +1,216 @@
+html, body, h1, h2, h3, h4, h5, h6, h7, p, a, ul, ol, li, img, section {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 62.5%; /* 1em = 10px */
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header, .awards, .personal-projects, .extra-activities, .tech-skills, .soft-skills, footer {
+    padding: 30px 0;   
+}
+
+/* HEADER */
+header {
+    background-color: #042D45;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+.tagline {
+    background-color: #55B5EE;
+    padding: 20px 0;
+}
+
+.tagline h2 {
+    color: white;
+    text-align: center;
+}
+
+/* MAIN */
+
+/* AWARDS */
+.awards {
+    margin: 0 auto;
+    width: 804px;
+}
+
+.awards h3 {
+    border-bottom: 2px solid #0969A2;
+    color: #0969A2;
+    margin-bottom: 20px;
+    text-align: center;  
+}
+
+.awards ul {
+    list-style-type: none;
+}
+
+.awards ul li {
+    margin-bottom: 20px;
+    max-height: 300px;
+}
+
+.awards ul li:last-child {
+    margin-bottom: 0;
+}
+
+.awards ul .nao-contest {
+    border: 2px solid #F29400;
+}
+
+.awards ul .ar-challenge {
+    border: 2px solid #38BAA2;
+}
+
+.awards ul .imagine-cup {
+    border: 2px solid #5C2D91;
+}
+
+/* PERSONAL-PROJECTS */
+.personal-projects {
+    background-color: #3F87B1;
+}
+
+.personal-projects h3 {
+    border-bottom: 2px solid white;
+    color: white;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.personal-projects ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.personal-projects li {
+    max-height: 300px;
+}
+
+/* EXTRA ACTIVITIES */
+.extra-activities {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.extra-activities h3 {
+    border-bottom: 2px solid #0969A2;
+    color: #0969A2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.extra-activities ul {
+    list-style-type: none;
+}
+
+.extra-activities ul li {
+    max-height: 300px;
+}
+
+/* TECH SKILLS */
+.tech-skills {
+    background-color: #55B5EE;
+}
+
+.tech-skills h3 {
+    border-bottom: 2px solid white;
+    color: white;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 800px;
+}
+
+.tech-skills ul {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tech-skills ul li {
+    background-color: #042D45;
+    color: white;
+    display: inline;
+    font-size: 20px;
+    margin-right: 19px;
+    padding: 10px 25px;
+}
+
+.tech-skills ul li:last-child {
+    margin-right: 0;
+}
+
+/* SOFT SKILLS */
+.soft-skills {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.soft-skills h3 {
+    border-bottom: 2px solid #0969A2;
+    color: #0969A2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.soft-skills ul {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.soft-skills ul li {
+    background-color: #0D9BEE;
+    color: white;
+    display: inline;
+    font-size: 20px;
+    margin-right: 51px;
+    padding: 10px 25px;
+}
+
+.soft-skills ul li:last-child {
+    margin-right: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #042D45;
+}
+
+footer h2 {
+    color: white;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
