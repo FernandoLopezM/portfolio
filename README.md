@@ -1,2 +1,2 @@
 # portfolio
-A single web page that includes my résumè.
+A single web page that includes my resume.
