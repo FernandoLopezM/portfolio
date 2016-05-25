@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 A single web page that includes my resume.
 
 You can find it here:
