@@ -12,19 +12,8 @@ html {
 
 body {
     font-family: "PT Sans Caption", sans-serif;
-    font-size: 62.5%; /* 1em = 10px */
-}
-
-h1 {
-    font-size: 65px;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-h3 {
-    font-size: 28px;
+    font-size: 62.5%;   /* 1em = 10px */
+    width: 100%;        /* 1440px */
 }
 
 a {
@@ -32,11 +21,43 @@ a {
     text-decoration: none;
 }
 
-header, .awards, .personal-projects, .extra-activities, .tech-skills, .soft-skills, footer {
-    padding: 30px 0;   
+img {
+    max-width: 100%;
 }
 
-/* HEADER */
+h1 {
+    font-size: 6.5em;    /* 65px/10px */ 
+}
+
+h2 {
+    font-size: 3.2em;    /* 32px/10px */
+}
+
+h3 {
+    font-size: 2.8em;    /* 28px/10px */
+}
+
+.tech-skills ul li, .soft-skills ul li {
+    font-size: 2.0em;    /* 20px/10px */   
+}
+
+header {
+    padding:  2.0833333333333332% 0;    /* 30px/1440px */ 
+}
+
+footer {
+    padding:  3.0833333333333332% 0;    /* 44px/1440px */ 
+}
+
+.tagline {
+    padding: 1.3888888888888888% 0;     /* 20px/1440px */
+}
+
+.awards, .personal-projects, .extra-activities, .tech-skills, .soft-skills {
+    padding: 40px 0;     
+}
+
+/* ----- HEADER ----- */
 header {
     background-color: #042D45;
 }
@@ -48,7 +69,6 @@ header h1 {
 
 .tagline {
     background-color: #55B5EE;
-    padding: 20px 0;
 }
 
 .tagline h2 {
@@ -56,9 +76,9 @@ header h1 {
     text-align: center;
 }
 
-/* MAIN */
+/* ----- MAIN ----- */
 
-/* AWARDS */
+/* ----- AWARDS ----- */
 .awards {
     margin: 0 auto;
     width: 804px;
@@ -96,7 +116,7 @@ header h1 {
     border: 2px solid #5C2D91;
 }
 
-/* PERSONAL-PROJECTS */
+/* ----- PERSONAL-PROJECTS ----- */
 .personal-projects {
     background-color: #3F87B1;
 }
@@ -118,7 +138,7 @@ header h1 {
     max-height: 300px;
 }
 
-/* EXTRA ACTIVITIES */
+/* ----- EXTRA ACTIVITIES ----- */
 .extra-activities {
     margin: 0 auto;
     width: 800px;
@@ -139,7 +159,7 @@ header h1 {
     max-height: 300px;
 }
 
-/* TECH SKILLS */
+/* ----- TECH SKILLS ----- */
 .tech-skills {
     background-color: #55B5EE;
 }
@@ -147,13 +167,15 @@ header h1 {
 .tech-skills h3 {
     border-bottom: 2px solid white;
     color: white;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     text-align: center;
     width: 800px;
 }
 
 .tech-skills ul {
     text-align: center;
+    width: 800px;
+    margin: 0 auto;
     padding-bottom: 10px;
 }
 
@@ -161,8 +183,7 @@ header h1 {
     background-color: #042D45;
     color: white;
     display: inline;
-    font-size: 20px;
-    margin-right: 19px;
+    margin-right: 15px;
     padding: 10px 25px;
 }
 
@@ -170,7 +191,7 @@ header h1 {
     margin-right: 0;
 }
 
-/* SOFT SKILLS */
+/* ----- SOFT SKILLS ----- */
 .soft-skills {
     margin: 0 auto;
     width: 800px;
@@ -179,7 +200,7 @@ header h1 {
 .soft-skills h3 {
     border-bottom: 2px solid #0969A2;
     color: #0969A2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -192,8 +213,7 @@ header h1 {
     background-color: #0D9BEE;
     color: white;
     display: inline;
-    font-size: 20px;
-    margin-right: 51px;
+    margin-right: 40px;
     padding: 10px 25px;
 }
 
@@ -201,7 +221,7 @@ header h1 {
     margin-right: 0;
 }
 
-/* FOOTER */
+/* ----- FOOTER ----- */
 footer {
     background-color: #042D45;
 }
@@ -213,4 +233,248 @@ footer h2 {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/*-----------------------------------------------
+    Media Queries
+-----------------------------------------------*/
+
+/* < 960px */
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 53%;
+    }
+    
+    .awards, .personal-projects, .extra-activities, .tech-skills, .soft-skills {
+        padding: 30px 0;     
+    }
+    
+    /* ----- MAIN ----- */
+
+    /* ----- AWARDS ----- */
+    .awards {
+        width: 654px;     
+    }
+    
+    .awards ul li {
+        margin-bottom: 15px;
+        height: 243.75px;    
+    }
+
+    /* ----- PERSONAL-PROJECTS ----- */
+    .personal-projects h3 {
+        width: 650px;
+    }
+    
+    .personal-projects ul li img {
+        width: 650px;
+    }
+    
+    /* ----- EXTRA ACTIVITIES ----- */
+    .extra-activities {
+        width: 650px;
+    }
+    
+    /* ----- TECH SKILLS ----- */
+    .tech-skills h3 {
+        width: 650px;
+    }
+    
+    .tech-skills ul {
+        text-align: center;
+        width: 650px;
+        padding-bottom: 0;
+    }
+    
+    .tech-skills ul li {
+        display: inline-block;
+        width: 90px;
+        margin-right: 27px;
+    }
+    
+    .tech-skills ul li:nth-child(4) {
+        margin-right: 0;
+    }
+    
+    .tech-skills ul li:nth-child(5) {
+        margin-top: 15px;
+    }
+    
+    /* ----- SOFT SKILLS ----- */
+    .soft-skills {
+        width: 650px;
+    }
+    
+    .soft-skills ul {
+        padding-bottom: 0;
+    }
+    
+    .soft-skills ul li {
+        display: inline-block;
+        width: 200px;
+        margin-right: 50px;
+        padding: 10px 25px;
+    }
+    
+    .soft-skills ul li:nth-child(2) {
+        margin-right: 0;
+    }
+    
+    .soft-skills ul li:nth-child(3) {
+        margin-top: 15px;
+    }
+}
+
+/* < 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 43%;
+    }
+
+     h1 {
+        padding: 0 30px;
+    }
+    
+    .awards, .personal-projects, .extra-activities, .tech-skills, .soft-skills {
+        padding: 20px 0;     
+    }
+    
+    /* ----- MAIN ----- */
+
+    /* ----- AWARDS ----- */
+    .awards {
+        width: 530px;     
+    }
+    
+    .awards ul li {
+        margin-bottom: 15px;
+        height: 197.25px;    
+    }
+    
+    /* ----- PERSONAL-PROJECTS ----- */
+    .personal-projects h3 {
+        width: 530px;
+    }
+    
+    .personal-projects ul li img {
+        width: 530px;
+    }
+    
+    /* ----- EXTRA ACTIVITIES ----- */
+    .extra-activities {
+        width: 530px;
+    }
+    
+    /* ----- TECH SKILLS ----- */
+    .tech-skills h3, .tech-skills ul {
+        width: 530px;
+    }
+    
+    .tech-skills ul li {
+        width: 60px;
+    }
+    
+    /* ----- SOFT SKILLS ----- */
+    .soft-skills {
+        width: 530px;
+    }
+
+    .soft-skills ul li {
+        width: 150px;
+    }
+}
+
+/* < 620px */ 
+@media screen and (max-width: 620px) {
+    footer {
+        padding:  4.5% 0;    /* 30px/1440px */ 
+    }
+    
+    /* ----- MAIN ----- */
+
+    /* ----- AWARDS ----- */
+    .awards {
+        width: 364px;     
+    }
+    
+    .awards ul li {
+        margin-bottom: 15px;
+        height: 135px;    
+    }
+    
+    /* ----- PERSONAL-PROJECTS ----- */
+    .personal-projects h3 {
+        width: 360px;
+    }
+    
+    .personal-projects ul li img {
+        width: 360px;
+    }
+    
+    /* ----- EXTRA ACTIVITIES ----- */
+    .extra-activities {
+        width: 360px;
+    }
+    
+    /* ----- TECH SKILLS ----- */
+    .tech-skills h3, .tech-skills ul {
+        width: 360px;
+    }
+    
+    .tech-skills ul li {
+        width: 40px;
+        margin-right: 15px;
+        padding: 10px 18px;
+    }
+    
+    .tech-skills ul li:nth-child(7) {
+        width: 90px;
+    }
+    
+    /* ----- SOFT SKILLS ----- */
+    .soft-skills {
+        width: 360px;
+    }
+
+    .soft-skills ul li {
+        width: 100px;
+    }
+}
+
+/* < 400px */ 
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 35%;
+    }
+
+    /* ----- MAIN ----- */
+    .personal-projects h3, .personal-projects ul li img, .extra-activities, .tech-skills h3, .tech-skills ul, .soft-skills {
+        width: 340px;
+    }
+    
+    .awards h3, .personal-projects h3, .extra-activities h3, .tech-skills h3, .soft-skills h3 {
+        margin-bottom: 15px;
+    }
+
+    /* ----- AWARDS ----- */
+    .awards {
+        width: 344px;     
+    }
+    
+    .awards ul li {
+        margin-bottom: 15px;
+        height: 127.50px;    
+    }
+
+    /* ----- TECH SKILLS ----- */
+    .tech-skills ul li {
+        width: 40px;
+        margin-right: 10px;
+    }    
+    
+    /* ----- SOFT SKILLS ----- */
+    .soft-skills ul li {
+        width: 90px;
+        margin-right: 30px;
+    }
 }
